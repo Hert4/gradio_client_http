@@ -1,6 +1,6 @@
 from database import db_schema
 import os
-from router import gmes, table_worst
+from router import gmes, worst
 
 ACCESS_TOKEN = os.getenv("HF_TOKEN")
 
@@ -11,7 +11,7 @@ Sau đây là lược đồ cơ sở dữ liệu mà truy vấn SQL sẽ chạy 
 
 {gmes}
 
-{table_worst}
+{worst}
 
 Trả về truy vấn SQL như sau:
 ```sql
@@ -20,3 +20,6 @@ Trả về truy vấn SQL như sau:
 
 Lưu ý: Chỉ báo cáo khi mà bạn đã truy vấn SQL trước đó không tự ý báo dữ liệu giả.
 """
+
+####################################################################################################
+# cấu trúc system prompt = 
